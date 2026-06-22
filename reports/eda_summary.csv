@@ -1,0 +1,2 @@
+total_rows,total_columns,fraud_count,non_fraud_count,fraud_percentage,non_fraud_percentage,imbalance_ratio,duplicate_rows,missing_values_total,unique_origin_accounts,unique_destination_accounts
+6362620,11,8213,6354407,0.12908204481801522,99.87091795518198,773.7010836478753,0,0,6353307,2722362
