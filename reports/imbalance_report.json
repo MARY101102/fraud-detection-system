@@ -1,0 +1,48 @@
+{
+    "train_distribution": {
+        "class_counts": {
+            "0": 5083526,
+            "1": 6570
+        },
+        "class_percentages": {
+            "0": 99.87092581357993,
+            "1": 0.12907418642005966
+        }
+    },
+    "test_distribution": {
+        "class_counts": {
+            "0": 1270881,
+            "1": 1643
+        },
+        "class_percentages": {
+            "0": 99.87088652159017,
+            "1": 0.12911347840983745
+        }
+    },
+    "class_weights_for_sklearn": {
+        "0": 0.5006462050159672,
+        "1": 387.37412480974126
+    },
+    "xgboost_scale_pos_weight": 773.7482496194825,
+    "catboost_class_weights": [
+        0.5006462050159672,
+        387.37412480974126
+    ],
+    "notes": [
+        "The dataset is highly imbalanced.",
+        "Accuracy should not be used as the main metric.",
+        "Use recall, precision, F1-score, ROC-AUC, PR-AUC, and confusion matrix.",
+        "Resampling must be applied only to training data, never test data."
+    ],
+    "undersampled_train_distribution": {
+        "class_counts": {
+            "0": 32850,
+            "1": 6570
+        },
+        "class_percentages": {
+            "0": 83.33333333333334,
+            "1": 16.666666666666664
+        }
+    },
+    "undersampling_strategy": "RandomUnderSampler with sampling_strategy=0.2"
+}

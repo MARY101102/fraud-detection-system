@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from src.data.load_data import load_raw_data
+from src.features.build_features import build_features
 from src.utils.config import PROCESSED_DATA_DIR
 
 
@@ -173,6 +174,9 @@ def run_preprocessing_pipeline():
 
     print("\nRemoving duplicates...")
     df = remove_duplicates(df)
+
+    print("\nBuilding engineered features...")
+    df = build_features(df)
 
     print("\nPreparing features and target...")
     X, y = prepare_features_and_target(df)
