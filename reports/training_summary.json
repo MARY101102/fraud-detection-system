@@ -1,0 +1,9 @@
+{
+    "best_model": "xgboost_undersampled",
+    "selection_metric": "pr_auc",
+    "notes": [
+        "Models were evaluated on the untouched original test set.",
+        "PR-AUC is used as the main ranking metric because the dataset is highly imbalanced.",
+        "Accuracy is not used as the primary metric for fraud detection."
+    ]
+}
