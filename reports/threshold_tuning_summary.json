@@ -1,0 +1,17 @@
+{
+    "best_model": "xgboost_undersampled",
+    "selection_metric": "f1_score",
+    "selected_threshold": 0.9500000000000001,
+    "precision": 0.9414129810453762,
+    "recall": 0.9975654290931223,
+    "f1_score": 0.9686761229314421,
+    "true_negatives": 1270779,
+    "false_positives": 102,
+    "false_negatives": 4,
+    "true_positives": 1639,
+    "notes": [
+        "The default threshold 0.5 is not always optimal for fraud detection.",
+        "This selected threshold maximizes F1-score as a balanced starting point.",
+        "In a real bank, the final threshold should be selected based on fraud cost, false positive cost, and analyst review capacity."
+    ]
+}
